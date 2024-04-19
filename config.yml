@@ -5,13 +5,13 @@ text-prefix: "b."            # The prefix for text commands. They can be found a
 
 # Stuff that will be shown on /about.
 about:
-  description: "Collect balls on Discord. Made for people without Docker or PC." # Edits the first line of /about.
+  description: "Collect balls on Discord, made for people without Docker or PC" # Edits the first line of /about.
   github-link: "https://github.com/wascertified/dockerless-dex"                  # Only change this if you have a fork, this is not required and can be skipped.
   discord-invite: "https://discord.gg/RSdcTAn7FG"                                # Change to your discord server.
 
 # Stuff that will be used on commands.
 collectibles-name: "ball"       # Don't add an "s" as the bot will already add the extra "s".
-bot-name: "Dockerless-Dex"      # The name of the dex.
+bot-name: "EraDex"      # The name of the dex.
 players-group-cog-name: "balls" # No spaces, must be lowercase.
 
 # For having multiple, just make sure it matches this look:
@@ -31,6 +31,6 @@ players-group-cog-name: "balls" # No spaces, must be lowercase.
 # Bot startup status configuration.
 startup_status:
   activity_type: "watching"                # Options: playing, streaming, listening, watching
-  activity_name: "Dockerless-Dex"          # Name of the activity.
-  status: "dnd"                            # Options: online, idle, dnd, invisible
+  activity_name: "EraDex"          # Name of the activity.
+  status: "online"                            # Options: online, idle, dnd, invisible
   stream_url: "http://twitch.tv/settings"  # Required if activity_type is streaming. If it is a YouTube link, it must be a Stream-type video.
