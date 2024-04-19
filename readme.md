@@ -103,6 +103,14 @@ python dex.py # Believing you're still in the dockerless-dex/ folder.
 6. You can find some documentaion on how to add collectables [here](https://github.com/wascertified/dockerless-dex/tree/main/ymls). The link mentioned also works as a guide for the YML files.
 7. And you're done! Now you can run the bot if you've done everything correctly.
    - `python dex.py`
+## Mobile installation
+1. Copy the url link
+2. Go to replit
+3. Paste the link
+4. If it says "Add a run commmand" type in `python dex.py`
+5. Edit the stuff said in Windows installation
+6. Run and your done!
+PRO TIP: Use this [website](https://www.lastpass.com/features/password-generator#generatorTool) to prevent getting your bot hacked
 
 ### Other Stuff
 Found an issue? Got a question? Something just didn't work?
