@@ -521,7 +521,7 @@ class CatchModal(discord.ui.Modal):
 
     async def on_submit(self, interaction: discord.Interaction):
         if self.catch_button.disabled:
-            await interaction.response.send_message(f"{interaction.user.mention} I've been caught already!", ephemeral=False)
+            await interaction.response.send_message(f"{interaction.user.mention} Sorry buddy! I've been caught already!", ephemeral=False)
             return
 
         input_name = self.countryball_name_input.value.lower()
@@ -537,13 +537,13 @@ class CatchModal(discord.ui.Modal):
 
         user_owns_ball = check_if_user_owns_ball(interaction.user.id, self.correct_name)
         shiny_status = "Yes" if random.randint(1, 2048) == 1 else "No"
-        shiny_message = f"\n:star: It's a shiny **{collectibles_name}**! :star:" if shiny_status == "Yes" else ""
+        shiny_message = f"\n:sparkles: ***AMAZING!! It's an shiny {collectibles_name}!*** :sparkles:" if shiny_status == "Yes" else ""
 
         if correct_catch_name and input_name in correct_catch_names:
             add_caught_ball(interaction.user.id, self.countryball_url, self.correct_name, time.time(), shiny_status, self.stats['hp'], self.stats['attack'])
-            message_content = f"{interaction.user.mention} You caught **{self.correct_name}!** (attack: {self.stats['attack']}, hp: {self.stats['hp']})"
+            message_content = f"Nice one! {interaction.user.mention} You caught **{self.correct_name}!**"
             if not user_owns_ball:
-                message_content += f"\n\nThis is a **new {collectibles_name}** that has been added to your collection!"
+                message_content += f"\n\nThis is also a **brand new {collectibles_name}** that has been added to your completion! Keep it up"
             message_content += shiny_message
             await interaction.response.send_message(message_content, ephemeral=False)
             self.catch_button.disabled = True
@@ -593,7 +593,7 @@ async def spawn_countryball(channel):
     random_countryball_url = countryballs[random_countryball_name]
 
     embed = discord.Embed(
-        title=f"A wild {collectibles_name} appeared!"
+        title=f"A wild {collectibles_name} has spawned!"
     )
     embed.set_image(url=random_countryball_url)
 
@@ -635,7 +635,7 @@ async def spawnball(ctx, *, ball_name: str = None):
         random_countryball_name, random_countryball_url = countryball_choice
 
     embed = discord.Embed(
-        title=f"A wild {collectibles_name} appeared!"
+        title=f"A wild {collectibles_name} has spawned!"
     )
     embed.set_image(url=random_countryball_url)
 
