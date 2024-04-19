@@ -110,6 +110,7 @@ python dex.py # Believing you're still in the dockerless-dex/ folder.
 4. If it says "Add a run commmand" type in `python dex.py`
 5. Edit the stuff said in Windows installation
 6. Run and your done!
+
 PRO TIP: Use this [website](https://www.lastpass.com/features/password-generator#generatorTool) to prevent getting your bot hacked
 
 ### Other Stuff
