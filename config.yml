@@ -6,7 +6,7 @@ text-prefix: "b."            # The prefix for text commands. They can be found a
 # Stuff that will be shown on /about.
 about:
   description: "Collect balls on Discord, made for people without Docker or PC" # Edits the first line of /about.
-  github-link: "https://github.com/wascertified/dockerless-dex"                  # Only change this if you have a fork, this is not required and can be skipped.
+  github-link: "https://github.com/TheRealBaconmaxyy/eradex-source-code"                  # Only change this if you have a fork, this is not required and can be skipped.
   discord-invite: "https://discord.gg/RSdcTAn7FG"                                # Change to your discord server.
 
 # Stuff that will be used on commands.
